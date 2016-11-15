@@ -12,7 +12,7 @@ of the post-processing stack. It exposes all the settings and enable/disable
 flags as public members. These members can be directly modified from the
 inspector, scripts and animations.
 
-![inspector](http://i.imgur.com/pCF1OsQt.png)
+![inspector](http://i.imgur.com/7cFoof1m.png)
 ![animation](http://i.imgur.com/YRuF7nAl.png)
 
 It creates a clone of the profile when starting the Play mode, and thus it can
