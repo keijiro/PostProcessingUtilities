@@ -16,7 +16,7 @@ inspector, scripts and animations.
 ![animation](http://i.imgur.com/YRuF7nAl.png)
 
 It creates a clone of the profile when starting the Play mode, and thus it can
-avoid modifying the profile asset on changes. This is similar to
+avoid modifying the profile asset with changes. This is similar to
 [`Renderer.material`][RendererMaterial] that automatically creates a clone of
 a material on changes.
 
