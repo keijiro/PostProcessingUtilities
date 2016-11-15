@@ -12,6 +12,9 @@ of the post-processing stack -- It exposes all the settings and enabled/disabled
 flags as public members. These members can be directly modified from a script or
 an animation.
 
+![inspector](http://i.imgur.com/pCF1OsQt.png)
+![animation](http://i.imgur.com/YRuF7nAl.png)
+
 It creates a clone of the profile when starting the Play mode, thus it can
 avoid modifying the profile asset on changes. This is similar to
 [`Renderer.material`][RendererMaterial] that automatically creates a clone
