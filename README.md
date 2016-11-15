@@ -1,8 +1,8 @@
 Post-Processing Utilities
 =========================
 
-This repository contains some utility scripts for [the post-processing stack]
-[PostProcessing].
+This repository contains some small utility scripts for
+[the post-processing stack][PostProcessing].
 
 PostProcessingController
 ------------------------
@@ -10,7 +10,7 @@ PostProcessingController
 **PostProcessingController** provides a simple interface to modify the settings
 of the post-processing stack. It exposes all the settings and enable/disable
 flags as public members. These members can be directly modified from the
-inspector, a script or an animation.
+inspector, scripts and animations.
 
 ![inspector](http://i.imgur.com/pCF1OsQt.png)
 ![animation](http://i.imgur.com/YRuF7nAl.png)
