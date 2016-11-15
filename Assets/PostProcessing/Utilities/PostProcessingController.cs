@@ -10,39 +10,51 @@ namespace UnityEngine.PostProcessing.Utilities
     {
         #region Public structs
 
+        public bool controlAntialiasing;
         public bool enableAntialiasing;
         public AntialiasingModel.Settings antialiasing;
 
+        public bool controlAmbientOcclusion;
         public bool enableAmbientOcclusion;
         public AmbientOcclusionModel.Settings ambientOcclusion;
 
+        public bool controlScreenSpaceReflection;
         public bool enableScreenSpaceReflection;
         public ScreenSpaceReflectionModel.Settings screenSpaceReflection;
 
+        public bool controlDepthOfField = true;
         public bool enableDepthOfField;
         public DepthOfFieldModel.Settings depthOfField;
 
+        public bool controlMotionBlur;
         public bool enableMotionBlur;
         public MotionBlurModel.Settings motionBlur;
 
+        public bool controlEyeAdaptation;
         public bool enableEyeAdaptation;
         public EyeAdaptationModel.Settings eyeAdaptation;
 
+        public bool controlBloom;
         public bool enableBloom;
         public BloomModel.Settings bloom;
 
+        public bool controlColorGrading;
         public bool enableColorGrading;
         public ColorGradingModel.Settings colorGrading;
 
+        public bool controlUserLut;
         public bool enableUserLut;
         public UserLutModel.Settings userLut;
 
+        public bool controlChromaticAberration;
         public bool enableChromaticAberration;
         public ChromaticAberrationModel.Settings chromaticAberration;
 
+        public bool controlGrain;
         public bool enableGrain;
         public GrainModel.Settings grain;
 
+        public bool controlVignette;
         public bool enableVignette;
         public VignetteModel.Settings vignette;
 
@@ -104,77 +116,113 @@ namespace UnityEngine.PostProcessing.Utilities
 
         void Update()
         {
-            if (enableAntialiasing != _profile.antialiasing.enabled)
-                _profile.antialiasing.enabled = enableAntialiasing;
+            if (controlAntialiasing)
+            {
+                if (enableAntialiasing != _profile.antialiasing.enabled)
+                    _profile.antialiasing.enabled = enableAntialiasing;
 
-            if (enableAntialiasing)
-                _profile.antialiasing.settings = antialiasing;
+                if (enableAntialiasing)
+                    _profile.antialiasing.settings = antialiasing;
+            }
 
-            if (enableAmbientOcclusion != _profile.ambientOcclusion.enabled)
-                _profile.ambientOcclusion.enabled = enableAmbientOcclusion;
+            if (controlAmbientOcclusion)
+            {
+                if (enableAmbientOcclusion != _profile.ambientOcclusion.enabled)
+                    _profile.ambientOcclusion.enabled = enableAmbientOcclusion;
 
-            if (enableAmbientOcclusion)
-                _profile.ambientOcclusion.settings = ambientOcclusion;
+                if (enableAmbientOcclusion)
+                    _profile.ambientOcclusion.settings = ambientOcclusion;
+            }
 
-            if (enableScreenSpaceReflection != _profile.screenSpaceReflection.enabled)
-                _profile.screenSpaceReflection.enabled = enableScreenSpaceReflection;
+            if (controlScreenSpaceReflection)
+            {
+                if (enableScreenSpaceReflection != _profile.screenSpaceReflection.enabled)
+                    _profile.screenSpaceReflection.enabled = enableScreenSpaceReflection;
 
-            if (enableScreenSpaceReflection)
-                _profile.screenSpaceReflection.settings = screenSpaceReflection;
+                if (enableScreenSpaceReflection)
+                    _profile.screenSpaceReflection.settings = screenSpaceReflection;
+            }
 
-            if (enableDepthOfField != _profile.depthOfField.enabled)
-                _profile.depthOfField.enabled = enableDepthOfField;
+            if (controlDepthOfField)
+            {
+                if (enableDepthOfField != _profile.depthOfField.enabled)
+                    _profile.depthOfField.enabled = enableDepthOfField;
 
-            if (enableDepthOfField)
-                _profile.depthOfField.settings = depthOfField;
+                if (enableDepthOfField)
+                    _profile.depthOfField.settings = depthOfField;
+            }
 
-            if (enableMotionBlur != _profile.motionBlur.enabled)
-                _profile.motionBlur.enabled = enableMotionBlur;
+            if (controlMotionBlur)
+            {
+                if (enableMotionBlur != _profile.motionBlur.enabled)
+                    _profile.motionBlur.enabled = enableMotionBlur;
 
-            if (enableMotionBlur)
-                _profile.motionBlur.settings = motionBlur;
+                if (enableMotionBlur)
+                    _profile.motionBlur.settings = motionBlur;
+            }
 
-            if (enableEyeAdaptation != _profile.eyeAdaptation.enabled)
-                _profile.eyeAdaptation.enabled = enableEyeAdaptation;
+            if (controlEyeAdaptation)
+            {
+                if (enableEyeAdaptation != _profile.eyeAdaptation.enabled)
+                    _profile.eyeAdaptation.enabled = enableEyeAdaptation;
 
-            if (enableEyeAdaptation)
-                _profile.eyeAdaptation.settings = eyeAdaptation;
+                if (enableEyeAdaptation)
+                    _profile.eyeAdaptation.settings = eyeAdaptation;
+            }
 
-            if (enableBloom != _profile.bloom.enabled)
-                _profile.bloom.enabled = enableBloom;
+            if (controlBloom)
+            {
+                if (enableBloom != _profile.bloom.enabled)
+                    _profile.bloom.enabled = enableBloom;
 
-            if (enableBloom)
-                _profile.bloom.settings = bloom;
+                if (enableBloom)
+                    _profile.bloom.settings = bloom;
+            }
 
-            if (enableColorGrading != _profile.colorGrading.enabled)
-                _profile.colorGrading.enabled = enableColorGrading;
+            if (controlColorGrading)
+            {
+                if (enableColorGrading != _profile.colorGrading.enabled)
+                    _profile.colorGrading.enabled = enableColorGrading;
 
-            if (enableColorGrading)
-                _profile.colorGrading.settings = colorGrading;
+                if (enableColorGrading)
+                    _profile.colorGrading.settings = colorGrading;
+            }
 
-            if (enableUserLut != _profile.userLut.enabled)
-                _profile.userLut.enabled = enableUserLut;
+            if (controlUserLut)
+            {
+                if (enableUserLut != _profile.userLut.enabled)
+                    _profile.userLut.enabled = enableUserLut;
 
-            if (enableUserLut)
-                _profile.userLut.settings = userLut;
+                if (enableUserLut)
+                    _profile.userLut.settings = userLut;
+            }
 
-            if (enableChromaticAberration != _profile.chromaticAberration.enabled)
-                _profile.chromaticAberration.enabled = enableChromaticAberration;
+            if (controlChromaticAberration)
+            {
+                if (enableChromaticAberration != _profile.chromaticAberration.enabled)
+                    _profile.chromaticAberration.enabled = enableChromaticAberration;
 
-            if (enableChromaticAberration)
-                _profile.chromaticAberration.settings = chromaticAberration;
+                if (enableChromaticAberration)
+                    _profile.chromaticAberration.settings = chromaticAberration;
+            }
 
-            if (enableGrain != _profile.grain.enabled)
-                _profile.grain.enabled = enableGrain;
+            if (controlGrain)
+            {
+                if (enableGrain != _profile.grain.enabled)
+                    _profile.grain.enabled = enableGrain;
 
-            if (enableGrain)
-                _profile.grain.settings = grain;
+                if (enableGrain)
+                    _profile.grain.settings = grain;
+            }
 
-            if (enableVignette != _profile.vignette.enabled)
-                _profile.vignette.enabled = enableVignette;
+            if (controlVignette)
+            {
+                if (enableVignette != _profile.vignette.enabled)
+                    _profile.vignette.enabled = enableVignette;
 
-            if (enableVignette)
-                _profile.vignette.settings = vignette;
+                if (enableVignette)
+                    _profile.vignette.settings = vignette;
+            }
         }
 
         #endregion
