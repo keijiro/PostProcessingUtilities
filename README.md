@@ -31,5 +31,11 @@ effect depending on the distance from the camera to a target object.
 
 It uses PostProcessingController to update the distance value dynamically.
 
+How To Use
+----------
+
+Download and import [the unitypackage file][Unitypackage]. That's it :smiley:
+
 [PostProcessing]: https://github.com/Unity-Technologies/PostProcessing
 [RendererMaterial]: https://docs.unity3d.com/ScriptReference/Renderer-material.html
+[Unitypackage]: https://github.com/keijiro/PostProcessingUtilities/blob/master/PostProcessingUtilities.unitypackage
