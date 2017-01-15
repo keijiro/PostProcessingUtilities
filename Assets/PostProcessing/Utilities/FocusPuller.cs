@@ -52,7 +52,7 @@ namespace UnityEngine.PostProcessing.Utilities
             speed = _speed;
         }
 
-        void Update()
+        void OnPreRender()
         {
             if (_target == null) return;
 
