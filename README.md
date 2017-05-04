@@ -26,8 +26,8 @@ FocusPuller
 **FocusPuller** automatically updates the focus distance of the depth of field
 effect depending on the distance from the camera to a target object.
 
-![gif](https://67.media.tumblr.com/9843254db0c0b00255bb769c93e506e3/tumblr_ogoay0yY0p1qio469o1_320.gif)
-![gif](https://66.media.tumblr.com/58b49719b9bdde6c480b8abdba2571ab/tumblr_ogoay0yY0p1qio469o2_320.gif)
+![gif](http://i.imgur.com/Us8A4jj.gif)
+![gif](http://i.imgur.com/NeulpH6.gif)
 
 It uses PostProcessingController to update the distance value dynamically.
 
