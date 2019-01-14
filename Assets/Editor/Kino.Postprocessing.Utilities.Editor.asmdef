@@ -1,0 +1,16 @@
+{
+    "name": "Kino.Postprocessing.Utilities.Editor",
+    "references": [
+        "Kino.Postprocessing.Utilities"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
