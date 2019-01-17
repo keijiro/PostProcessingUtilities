@@ -31,7 +31,7 @@ namespace Kino.PostProcessing.Utilities
             _volume.isGlobal = true;
             _volume.priority = 1000;
 
-            Update();
+            LateUpdate();
         }
 
         void OnDestroy()
@@ -40,7 +40,7 @@ namespace Kino.PostProcessing.Utilities
             DestroyAsset(_profile);
         }
 
-        void Update()
+        void LateUpdate()
         {
             if (_camera == null || _target == null) return;
 
