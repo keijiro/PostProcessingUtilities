@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "com.unity.package-manager-ui": "2.0.3",
-    "com.unity.postprocessing": "2.1.2",
+    "com.unity.package-manager-ui": "2.1.2",
+    "com.unity.postprocessing": "2.1.6",
+    "com.unity.timeline": "1.0.0",
     "jp.keijiro.danish-statues": "https://github.com/keijiro/DanishStatues.git#upm",
     "jp.keijiro.test-assets": "https://github.com/keijiro/jp.keijiro.test-assets.git",
     "com.unity.modules.animation": "1.0.0",
@@ -12,6 +13,7 @@
     "com.unity.modules.jsonserialize": "1.0.0",
     "com.unity.modules.particlesystem": "1.0.0",
     "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
     "com.unity.modules.unityanalytics": "1.0.0",
     "com.unity.modules.unitywebrequest": "1.0.0",
     "com.unity.modules.video": "1.0.0",
