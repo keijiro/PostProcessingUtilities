@@ -2,7 +2,7 @@
     "name": "jp.keijiro.kino.post-processing.utilities",
     "displayName": "Post Processing Utilities",
     "version": "0.1.0",
-    "unity": "2018.3",
+    "unity": "2019.1",
     "description": "Utility scripts for Post-Processing Stack",
-    "dependencies": { "com.unity.postprocessing": "2.0.15-preview" }
+    "dependencies": { "com.unity.postprocessing": "2.1.6" }
 }
